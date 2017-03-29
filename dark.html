@@ -4,7 +4,7 @@
     <title>No, no eres un usuario</title>
     <meta charset="utf-8">
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Raleway:300|Roboto');
+      @import url('https://fonts.googleapis.com/css?family=Raleway:300|Roboto|Share+Tech+Mono');
 
       body { 
           font-family: 'Roboto'; 
@@ -20,17 +20,25 @@
           margin-top: 0;
           font-size: 32px;
       }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code, .remark-inline-code { font-family: 'Share Tech Mono'; }
       ul{
           line-height: 1.55;
       }
       li{
           margin-bottom: 1em;
       }
+      img{
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+      }
       .remark-slide-content{
           background: #312b24 url('images/logo-name-dark.png') no-repeat 95% 5%;
           background-size: 15% auto;
           color: #F0F0F0;
+      }
+      a{
+        color: #e49957; 
       }
     </style>
   </head>
@@ -45,7 +53,7 @@ class: left, middle
 
 @seduerey // SedueRey#2185 Battle.net
 
-*Frontend Developer en Answare-tech* // *Mercenario* // *Tullido*
+Frontend Developer en Answare-tech // Mercenario // Tullido
 
 *Perpetrando webs desde 1997*
 
@@ -119,12 +127,39 @@ Si tu aplicación / desarrollo no va a un target concreto esta es la edad de tus
 - En España viven 2,5 millones de personas con discapacidad
 - El 10% de los hombres tienen alguna ceguera al color
 - Casi 25 millones de personas (50,6%) en España usan gafas o lentillas
-- El 18,5% de las españolas y españoles son mayores de 65 años.
+- El 18,5% de la población es mayor de 65 años.
 
 Y por si fuera poco ...
 
 - Mirar un móvil pequeño en un día de sol.
-- Zonas de cobertura deficitaria, incluso en zonas con 4G
+- Zonas de cobertura deficitaria, incluso en zonas con 4G no siempre tienen 4G
+
+Lo que nos lleva a ...
+
+---
+
+# ¿Por qué ha acabado siendo necesario AMP?
+
+- Porque la hemos cagado. Mucho.
+
+![CA-GA-DA](images/poop.png)
+
+---
+
+# Uso y abuso del JavaScript
+
+Hemos roto Internet gracias a `npm install --save && npm build`.
+
+- Entrar en medium a leer un artículo con JS desactivado -> 70KB de media + imágenes.
+- Entrar en el mismo artículo con JS activado -> 1.1MB
+    - Comportamiento
+    - Tracking de usuarios
+
+Intentad hacerlo en zonas con poca cobertura 4G, Wifis de hotel, Internet en la playa.
+
+Una cosa son las SPA, otra un artículo. OP-TI-MI-ZAD. No, tu tienda no es un SPA. Ya quisieras.
+
+¿Webs de sitios turísticos? Megas y megas gastados en sitios sin optimizar.
 
 ---
 
@@ -164,6 +199,10 @@ Y está claro, **todo el mundo la caga**, adrede o no.
 Veamos algunos ejemplos de 2017.
 
 ---
+
+# Gracias
+
+### Ruegos, preguntas y pedradas
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
